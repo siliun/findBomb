@@ -7,7 +7,7 @@ import java.util.Random;
 // 지뢰찾기 결과값 생성기능
 public class Main {
 	
-	private final static int xAxis = 15; // 박스 가로개수
+	private final static int xAxis = 10; // 박스 가로개수
 	private final static int yAxis = 10; // 박스 새로개수
 	private final static int bombCount = 10; // 지뢰개수
 	private final static int bombVal = -9;	// 지뢰(폭탄)값
@@ -20,7 +20,6 @@ public class Main {
 		// 10X10 배열로 결과출력
 		for(int y = yAxis-1 ; y > -1; y--) {
 			for(int x = 0; x < xAxis ; x++ ) {
-//				System.out.print(String.format("[%s,%s]",j,i));
 				if(mineBox[x][y] > -1) {
 					System.out.print(" "+mineBox[x][y]);
 				} else {
