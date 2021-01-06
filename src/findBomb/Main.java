@@ -34,7 +34,7 @@ public class Main {
 	// 박스 생성 (가로개수, 세로개수, 지뢰개수)
 	public static int[][] createBox(int x, int y, int z){
 		
-		// x, y 배열 생성(0)
+		// x, y 배열 생성(0 으로 채우기)
 		int[][] mainBox = new int[x][y];
 		for(int i = 0; i < x; i++) {
 			for(int j = 0; j < y; j++) {
@@ -42,7 +42,7 @@ public class Main {
 			}
 		}
 		
-		// 지뢰자표 랜덤 생성(-99)
+		// 지뢰자표 랜덤 생성(지뢰 : -9)
 		Random rd = new Random();
 		
 		for(int i = 0; i < z; i++) {
